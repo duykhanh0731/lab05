@@ -1,0 +1,69 @@
+
+<HTML>
+<HEAD>
+<TITLE>Organizing Content of Web Page</TITLE>
+<style>
+/*== Reset CSS ==*/
+*{
+margin: 0;
+padding: 0;
+}
+/*== Style cơ bản cho website ==*/
+body {
+font-family: sans-serif;
+background-color: #333;
+}
+/*== Style cho menu ===*/
+#menu ul {
+background: #8AD385;
+width: 250px;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+#menu li {
+width: auto;
+height: 40px;
+line-height: 40px;
+border-bottom: 1px solid #e8e8e8;
+padding: 0 1em;
+position: relative;
+}
+#menu li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+display: block;
+}
+#menu li:hover {
+background: #CDE2CD;
+}
+/*== Dropdown Menu ==*/
+#menu .sub-menu {
+position: absolute;
+left: 250px;
+top: 0;
+display: none;
+}
+#menu li:hover .sub-menu {
+display: block;}
+</style>
+</HEAD>
+<BODY>
+<div id="menu">
+<ul>
+<li><a href="#home">Home</a></li>
+    <li>
+    <a href="#news">News</a>
+    <ul class="sub-menu">
+    <li><a href="MenuNgang.htm">News 1</a></li>
+    <li><a href="#">News 2</a></li>
+    <li><a href="#">News 3</a></li>
+    </ul>
+    </li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</div>
+</BODY>
+</HTML>
